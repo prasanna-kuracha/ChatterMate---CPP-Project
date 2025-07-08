@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build ChatBot",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "main.cpp",
+        "ChatBot.cpp",
+        "utilities.cpp",
+        "-o",
+        "ChatBotApp"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Compiling multi-file ChatBot project"
+    }
+  ]
+}
